@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="background">
+    <img src="https://png.pngtree.com/thumb_back/fw800/background/20231001/pngtree-completed-to-do-list-icon-a-3d-rendering-of-a-notebook-image_13576111.png" alt="to_do_list"
+    height="100%" width="100%">
+    </div>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">To Do List</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about us">about</a>
+            <a href="#contact us">contact</a> 
+        </nav>
+    </header>
+
+  <div class="bigcontainer">
+   
+    <div class="card" style="width: 18rem;">
+        <img src="https://marketplace.canva.com/EAExynBmj2o/1/0/1236w/canva-to-do-list%2C-checklist.-goals%2C-blank-printable-vertical-notebook-page-with-space-for-checklist-DZes1_uf-_w.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <button class="button" id="btn" onclick="openForm()">Add Your Task</button>
+        </div>
+    </div>
+    <div class="card2" style="width: 18rem; margin-left: 20px;">
+        <h3>Your Tasks:</h3>
+        <ul id="tasks"></ul>
+    </div>
+</div>
+
+  <div id="taskForm" class="form-popup">
+      <form class="form-container" onsubmit="addTask(event)">
+          <h2>Add Task</h2>
+
+          <label for="task">Task:</label>
+          <input type="text" id="task" required>
+          <br><br>
+          <button type="submit" class="btn">Add Task</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
